@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/myoutube_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/mtitle"
+        android:text="title"
+        android:layout_marginLeft="3dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mviews"
+            android:text="Views"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/likes"
+            android:text="Likes"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/share"
+            android:text="Share"
+            android:layout_marginLeft="20dp"
+            android:background="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:text="Description"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

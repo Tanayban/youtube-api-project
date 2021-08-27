@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout">
+
+        <EditText
+            android:id="@+id/metSearch"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:hint="Search..." />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Search" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mvideoSearch"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/msearch_progress"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Load More" />
+
+</RelativeLayout>
