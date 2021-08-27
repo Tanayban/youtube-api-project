@@ -85,8 +85,7 @@ class MainActivity : AppCompatActivity() {
             query,
             searchType,
             Constant.GOOGLE_API_KEY,
-           //
-            "snippet,id,statistics",
+            "snippet,id",
             "10",
             lastToken
         )!!
